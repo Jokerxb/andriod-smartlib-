@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bkg_content"
+
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/teachlog_text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:text="教学日志填写"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="55sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/teachlog_imageButton_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/btn_dialog" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/teachlog_text_teacherid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="教师账号"
+            android:textColor="#000"
+            android:textSize="35sp" />
+
+        <EditText
+            android:id="@+id/teachlog_edit_teacherid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#EE0000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/teachlog_text_teachername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名"
+            android:textColor="#000"
+            android:textSize="35sp" />
+
+        <EditText
+            android:id="@+id/teachlog_edit_teachername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#EE0000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/teachlog_text_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="周次"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000"
+            android:textSize="35sp" />
+
+        <EditText
+            android:id="@+id/teachlog_edit_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#3A5FCD"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:id="@+id/teachlog_text_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上课日期"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000"
+            android:textSize="35sp" />
+
+        <EditText
+            android:id="@+id/teachlog_edit_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#3A5FCD"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/teachlog_text_dayofweek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="星期"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000"
+            android:textSize="35sp" />
+
+        <EditText
+            android:id="@+id/teachlog_edit_dayofweek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#3A5FCD"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/teachlog_text_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时间"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000"
+            android:textSize="35sp" />
+
+        <EditText
+            android:id="@+id/teachlog_edit_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#3A5FCD"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/teachlog_text_lab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="教室"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000"
+            android:textSize="35sp" />
+
+        <EditText
+            android:id="@+id/teachlog_edit_lab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#3A5FCD"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:id="@+id/teachlog_text_coursename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="课程名称"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000"
+            android:textSize="35sp" />
+
+        <EditText
+            android:id="@+id/teachlog_edit_coursename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#3A5FCD"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/teachlog_text_classid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="班级"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000"
+            android:textSize="35sp" />
+
+        <EditText
+            android:id="@+id/teachlog_edit_classid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#3A5FCD"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/teachlog_text_studentnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="组数"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000"
+            android:textSize="35sp" />
+
+        <EditText
+            android:id="@+id/teachlog_edit_studentnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#3A5FCD"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/teachlog_text_classhour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学时"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000"
+            android:textSize="35sp" />
+
+        <EditText
+            android:id="@+id/teachlog_edit_classhour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#3A5FCD"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/teachlog_text_safeinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="安全情况"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000"
+            android:textSize="35sp" />
+
+        <Spinner
+            android:id="@+id/teachlog_spinner_safeinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_marginLeft="20dp"
+            android:entries="@array/safe"
+            android:outlineAmbientShadowColor="#3A5FCD"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/teachlog_text_evninfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text="环境情况"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000"
+            android:textSize="35sp" />
+
+        <Spinner
+            android:id="@+id/teachlog_spinner_evninfo"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_marginLeft="20dp"
+            android:entries="@array/huanjing"
+            android:outlineAmbientShadowColor="#3A5FCD"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:id="@+id/teachlog_text_coursecontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实验内容"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000"
+            android:textSize="35sp" />
+
+        <EditText
+            android:id="@+id/teachlog_edit_coursecontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="30"
+            android:inputType="textPersonName"
+            android:textColor="#3A5FCD"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:id="@+id/teachlog_text_remarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="备注"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000"
+            android:textSize="35sp" />
+
+        <EditText
+            android:id="@+id/teachlog_edit_remarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="30"
+            android:inputType="textPersonName"
+            android:textColor="#3A5FCD"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/teachlog_button_submit"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="提交" />
+
+</LinearLayout>
